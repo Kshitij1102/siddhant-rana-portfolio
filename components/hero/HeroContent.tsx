@@ -2,7 +2,7 @@ import Badge from "@/components/ui/Badge";
 import PrimaryButton from "@/components/ui/PrimaryButton";
 import HeroStats from "./HeroStats";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 
 export default function HeroContent() {
   return (
@@ -71,15 +71,30 @@ export default function HeroContent() {
 
       <div className="mt-6 flex flex-wrap gap-4">
 
+        {/* Book Consultation */}
+
         <PrimaryButton href="/#contact">
           Book Consultation
         </PrimaryButton>
 
+        {/* View Resume */}
+
         <Link
-          href="/research"
+          href="/resume/siddhant-rana-resume.pdf"
+          target="_blank"
           className="group flex items-center gap-2 rounded-full border-2 border-red-700 px-6 py-3 font-semibold text-red-700 transition-all duration-300 hover:bg-red-700 hover:text-white"
         >
-          Explore Research
+          <FileText className="h-5 w-5" />
+          View Resume
+        </Link>
+
+        {/* Research */}
+
+        <Link
+          href="/research"
+          className="group flex items-center gap-2 rounded-full border-2 border-gray-300 px-6 py-3 font-semibold text-gray-700 transition-all duration-300 hover:border-red-700 hover:bg-red-50 hover:text-red-700"
+        >
+          Research
 
           <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
