@@ -73,7 +73,7 @@ export default function HeroContent() {
 
         {/* Book Consultation */}
 
-        <PrimaryButton href="/#contact">
+        <PrimaryButton href="/book-session">
           Book Consultation
         </PrimaryButton>
 
