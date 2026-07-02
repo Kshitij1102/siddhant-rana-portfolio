@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mindbalancesports.in"),
+
   title: "Mind Balance Sports Psychology | Siddhant Rana",
+
   description:
     "Evidence-based sports psychology, mental performance coaching, confidence building, resilience training, psychological testing, and performance enhancement for athletes.",
 
@@ -36,38 +39,48 @@ export const metadata: Metadata = {
   ],
 
   creator: "Siddhant Rana",
+
   publisher: "Mind Balance Sports Psychology",
 
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo/logo.png",
+    shortcut: "/logo/logo.png",
+    apple: "/logo/logo.png",
   },
 
   openGraph: {
     title: "Mind Balance Sports Psychology | Siddhant Rana",
+
     description:
       "Evidence-based sports psychology to help athletes maximize performance, build confidence, improve resilience, and achieve peak mental fitness.",
+
     url: "https://mindbalancesports.in",
+
     siteName: "Mind Balance Sports Psychology",
+
     images: [
       {
-        url: "/logo.png",
+        url: "/logo/logo.png",
         width: 512,
         height: 512,
         alt: "Mind Balance Sports Psychology",
       },
     ],
+
     locale: "en_US",
+
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title: "Mind Balance Sports Psychology | Siddhant Rana",
+
     description:
       "Helping athletes unlock peak mental performance through evidence-based sports psychology.",
-    images: ["/logo.png"],
+
+    images: ["/logo/logo.png"],
   },
 };
 
