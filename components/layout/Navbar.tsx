@@ -7,7 +7,6 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-red-100/60 bg-white/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
-
         <Link
           href="/"
           className="flex items-center gap-3 transition-transform duration-300 hover:scale-[1.02]"
@@ -32,7 +31,6 @@ export default function Navbar() {
         </Link>
 
         {/* Navigation */}
-
         <nav className="hidden items-center gap-8 lg:flex">
           {[
             { name: "Home", href: "/" },
@@ -52,10 +50,9 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* CTA */}
-
+        {/* Book Consultation Button */}
         <Link
-          href="/#contact"
+          href="/book-session"
           className="group inline-flex items-center gap-2 rounded-full bg-red-700 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-red-800 hover:shadow-red-200"
         >
           Book Consultation
